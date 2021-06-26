@@ -1,0 +1,106 @@
+  <!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Ejercicios</title>
+  <style>
+    .container-fluid {
+      background-color: #5882FA;
+    }
+    .ficha {
+      width: 100px;
+      margin: 3px;
+      border: 1px solid black;
+      text-align: center;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header class="row">
+     
+    </header>
+    <main class="row">
+      <div class="col-12 col-lg-2 order-lg-2 bg-success">
+        <div class="row p-2">
+          <h5 class="col-12 text-light text-center p-1">FICHAJES
+            <span class="badge badge-light" id="numFichajes">0</span>
+          </h5>
+          <div class="col-12">
+
+          </div>
+          <div class="col-12" id="fichajes">
+
+          </div>
+          <div class="col-12">
+            <button type="button" class="btn btn-secondary btn-block" id="btn_borrarFichajes">Borrar fichajes</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-10">
+        <div class="row">
+          <h2 class="col-12 text-light bg-dark text-center p-2">PERSONAS DISPONIBLES</h2>
+          <div class="col-12 d-flex flex-wrap justify-content-around p-2">
+            <button type="button" class="btn btn-primary" id="primera">Primera</button>
+            <button type="button" class="btn btn-primary" id="ultima">Última</button>
+            <button type="button" class="btn btn-secondary" id="todas">Todas <span class="badge badge-light"
+                id="numTodas">--</span></button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-secondary" id="chicas">Chicas</button>
+              <button type="button" class="btn btn-secondary" id="chicos">Chicos</button>
+              <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Países <span class="badge badge-light" id="numPaises">--</span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1" id="contenedorPaises">
+                </div>
+              </div>
+            </div>
+
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-warning active">
+                <input type="radio" name="orden" value="noOrden" autocomplete="off" checked>Sin orden</input>
+              </label>
+              <label class="btn btn-warning">
+                <input type="radio" name="orden" value="nombre" autocomplete="off">Nombre</input>
+              </label>
+              <label class="btn btn-warning">
+                <input type="radio" name="orden" value="pais" autocomplete="off">Pais</input>
+              </label>
+              <label class="btn btn-warning">
+                <input type="radio" name="orden" value="nacimiento" autocomplete="off">Nacimiento</input>
+              </label>
+            </div>
+
+            <button type="button" class="btn btn-danger" id="borrar">Borrar <span class="badge badge-light"
+                id="numPantalla">--</span></button>
+          </div>
+        </div>
+        <div class="col-12 d-flex flex-wrap justify-content-around contenedor" id="contenedor_personas">
+
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="personas.js" charset="utf-8"></script>
+  <script src="ejerPersonas.js" charset="utf-8"></script>
+</body>
+
+</html>
